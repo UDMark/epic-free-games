@@ -1,9 +1,11 @@
 name: List Free Games
 
 on:
-  # Run every Thursday at 16:30 UTC (before claim workflow)
+  # Thursday 16:30 UTC = Friday 00:30 Asia/Shanghai (before claim)
+  # Friday 16:30 UTC = Saturday 00:30 Asia/Shanghai (backup if Thursday runner was not acquired)
   schedule:
     - cron: '30 16 * * 4'
+    - cron: '30 16 * * 5'
   workflow_dispatch:
 
 permissions:
