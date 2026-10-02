@@ -8,3 +8,6 @@ services:
     environment:
       - DATA_DIR=/app/data
       - TZ=Asia/Shanghai
+      - EG_EMAIL=${EG_EMAIL}
+      - EG_PASSWORD=${EG_PASSWORD}
+      - EG_OTPKEY=${EG_OTPKEY}
